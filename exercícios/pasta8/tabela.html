@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        font-family: ARIAL, HELVETICA, SANS-SERIF;
+    }
+    table{
+        BORDER-COLLAPSE: collapse;
+    }
+    TH, td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    th{
+        background: rgb(107, 97, 97);
+        color: white;
+    }
+</style>
+<body>
+    <h1>TABELAS DE MÉDIA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplina</th>
+                <th colspan="2">Nota</th>
+                <th rowspan="2" scope="row">Média</th>
+            </tr>
+            <tr>
+                <th>1º Trimestre</th>
+                <th>2º Trimestre</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="colgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>16</td>
+                <td>18</td>
+                <td>17</td>
+
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>14</td>
+                <td>15</td>
+                <td>14.5</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>12</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>18</td>
+                <td>20</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">Médias Exatas</th>
+                <td style="background: rgb(107, 97, 97); color: white;">17</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="colgroup">Humanas</th>
+                <td>Geografia</td>
+                <td>20</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>16</td>
+                <td>14</td>
+                <td>15</td> 
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">Médias Humanas</th>
+                <td style="background-color: rgb(107, 97, 97); color: white;">17</td>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>

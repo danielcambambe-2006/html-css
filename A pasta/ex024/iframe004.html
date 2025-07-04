@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IFRAMES</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam repudiandae porro est necessitatibus et nemo reprehenderit corrupti nesciunt, placeat corporis alias excepturi veniam temporibus, mollitia, commodi ullam ad laudantium.</p>
+    <!-- 
+sandbox="sandbox" ativa o modo sandbox no iframe, restringindo scripts, formulários, popups e acesso ao site principal.
+Isso aumenta a segurança ao incorporar conteúdos de terceiros.
+-->
+
+<!-- 
+referrerpolicy="no-referrer-when-downgrade" envia o cabeçalho Referer apenas se a navegação não for de HTTPS para HTTP.
+Se for downgrade (HTTPS → HTTP), nenhum Referer é enviado, aumentando a privacidade.
+-->
+
+<!-- 
+referrerpolicy="no-referrer" impede o envio do cabeçalho Referer em todas as requisições feitas a partir deste elemento.
+Isso protege a privacidade do usuário, pois o site de destino não recebe informações sobre a origem do acesso.
+-->
+
+    <iframe src="./exercicios/pag001.html" sandbox="allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não suporta iframes.
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsam repudiandae porro est necessitatibus et nemo reprehenderit corrupti nesciunt, placeat corporis alias excepturi veniam temporibus, mollitia, commodi ullam ad laudantium.</p>
+</body>
+</html>

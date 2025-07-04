@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Iframe</title>
+</head>
+<style>
+    body{
+        font-family:arial,helvetica, sans-serif;
+        background-color: lightblue;
+            margin: 0px;
+    }
+    iframe{
+        width: 95vw;
+        height: 300px;
+        border: 1px solid #000000;
+        display: block;
+        margin: auto;
+        
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    header{
+        background-color: rgb(34, 79, 116);
+        padding: 10px; 
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(34, 79, 116);
+        padding: 5px ;
+        border-radius: 5px;
+        margin: 15px;
+        line-height: 2em;
+       
+    }
+</style>
+<body>
+    <header>
+        <h1>Visita um dos meus sites</h1>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quia inventore repellendus beatae aliquid aperiam odio fugit, rerum placeat eaque veniam provident incidunt distinctio eos pariatur dicta, molestiae animi dolore!</p>
+    <ul>
+        <li><a href="https://danielcambambe-2006.github.io/projecto-cordel/" target="iframe">Projeto Cordel</a></li>
+        <li><a href="https://danielcambambe-2006.github.io/musik-2.0/" target="iframe">Musik</a></li>
+        <li><a href="https://danielcambambe-2006.github.io/ana-banana/" target="iframe">Ana Banana</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quia quis illo soluta accusantium consequuntur vitae, obcaecati accusamus nostrum recusandae dicta optio? Assumenda reprehenderit enim aspernatur animi amet numquam ducimus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quis perspiciatis rerum magni fuga eum et dolorem impedit voluptatibus cupiditate necessitatibus magnam qui, nostrum enim cumque perferendis sequi tempore consequuntur.</p>
+    
+    <iframe srcdoc="<h1 style='background-color: white; text-align: center'>Clica em um dos links acima para abrir</h1>" name="iframe" title="Visualização dos sites selecionados" >
+        Seu navegador não suporta iframes.
+    </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate suscipit impedit eos modi earum dolor dolore? Adipisci alias, aut numquam praesentium accusamus itaque ad molestias quam saepe, rem, delectus odio.</p>
+
+    <iframe src="https://www.netflix.com/" frameborder="1" height="300px" width="100px" sandbox="allow-forms"></iframe>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: arial, helvetica, sans-serif;
+
+    }
+    table{
+       
+        border-collapse: collapse;}
+        th, td{
+            border:1px solid black;
+            padding: 8px
+        }
+        thead{
+            background: gray;
+        }
+        caption{
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+</style>
+<body>
+    <h1>Trabalhando Com Tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana</td>
+                <td>A Freira</td>	
+                <td>Herege</td>	
+                <td>It: A Coisa</td>
+            </tr>
+            <tr>
+                <td>Liliana Gonçalo</td>
+                <td>Frozen 2</td>	
+                <td>Rapunzel</td>	
+                <td>Happy Feet</td>
+            </tr>
+            <tr>
+                <td>Vanda Mateus</td>	
+                <td>Bailarina</td>	
+                <td>Crepúsculo</td>
+                <td>BeeKeper</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Daniel</td>
+                <td>Parasita</td>
+                <td>ThunderBolts</td>
+                <td>The Accountat</td>
+            </tr>
+            <tr>
+                <td>João Bumba</td>	
+                <td>Apaixonados</td>	
+                <td>John Wick</td>	
+                <td>Dexter: Mortal</td>
+            </tr>
+            <tr>
+                <td>Reginaldo Rafael</td>	
+                <td>Zoolander</td>	
+                <td>Zoolander 2</td>
+                <td>Zoolander 3</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total de Filmes</th>
+                <td>12</td>
+            </tr>
+    </table>
+</body>
+</html>

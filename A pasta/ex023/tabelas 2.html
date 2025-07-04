@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBELAS</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead, tfoot {
+            background-color: #353030;
+            color: aliceblue;
+        }
+        .numero {
+            text-align: right;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        tbody tr:nth-child(odd ) { /*ou 2n-1*/
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(even) { /*ou 2n*/
+            background-color: gray;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px ;
+
+            background-color: #353030;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>EXERCÍCIOS COM TABELAS</h1>
+    <!--ANATOMIA DE TABELAS
+    TABLE
+    CAPTION
+    THEAD
+      TH, TR, TD
+    TBODY
+        TH, TR, TD
+    TFOOT
+        TH, TR, TD
+    -->
+
+    <table>
+        <caption>POPULAÇÃO NAS PROVÍNCIAS DE ANGOLA</caption>
+        <thead>
+            <tr>
+                <th scope= "col" > PROVÍNCIA</th> <!--col = coluna, row = linha, scope = escopo -->
+                <th scope="col">CAPITAL</th> <!--scope é usado para -->
+                <th scope="col">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bengo</td>
+                <td>Caxito</td>
+                <td class="numero">356 641</td>
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td>Bengela</td>
+                <td class="numero">2 231 385</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td>Kuito</td>
+                <td class="numero">2 231 385</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td>Cabinda</td>
+                <td class="numero">716 076	</td>
+            </tr>
+            <tr>
+                <td>Cuando Cubango</td>
+                <td>Menongue</td>
+                <td class="numero">308 506</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td>Ndalatando</td>
+                <td class="numero">443 386</td>
+            </tr>
+            <tr>
+                <td>Cuanza Sul</td>
+                <td>Sumbe</td>
+                <td class="numero">1 881 873</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td>Ondjiva</td>
+                <td class="numero">990 087	</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td>Huambo</td>
+                <td class="numero">2 019 555</td>
+            </tr>
+            <tr>
+                <td>Huíla</td>
+                <td>Lubango</td>
+                <td class="numero">2 500 000</td>
+            </tr>
+            <tr>
+                <td>Luanda</td>
+                <td>Luanda</td>
+                <td class="numero">8 000 000</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td>Saurimo</td>
+                <td class="numero">862 566</td>
+            </tr>
+            <tr>
+
+                <td>Lunda Sul</td>
+                <td>Saurimo</td>
+                <td class="numero">589.205</td>
+            </tr>
+            <tr>
+                <td>Malange</td>
+                <td>Malange</td>
+                <td class="numero">986 363</td>
+            <tr>
+                <td>Moxico</td>
+                <td>Luena</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td>Moçamedes</td>
+                <td class="numero">500.000</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td>Uíge</td>
+                <td class="numero">1 483 118</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td>Soyo</td>
+                <td class="numero">594 428	</td>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td></td>
+                    <td class="numero">25 789 024</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>
