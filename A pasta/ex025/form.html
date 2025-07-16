@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    *{
+        font-family: arial, helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>Iniciando Formulários</h1>
+    <!--name: Nome do campo, usado para identificar o campo no servidor
+    id: Identificador único do campo, usado para associar o rótulo ao campo
+    label: Rótulo do campo, usado para descrever o que o usuário deve inserir
+    type: Tipo de campo, como texto, senha, email, etc.
+    autocomplete: Sugestão de preenchimento automático para o campo
+    action: URL para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio
+    method: Método HTTP usado para enviar os dados do formulário (GET ou POST)
+    -->
+    <form action="Cadastro.php">
+        <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="isenha">Senha</label> <input type="password" name="senha" id="isenha"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
