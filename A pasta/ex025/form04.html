@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>E-mail e número de telemóvel</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <P>
+                <LABEL FOR="email">E-mail <input type="email" name="email" id="email" autocomplete="email" required>
+                </LABEL>
+            </P>
+            <p>
+                <label for="numero">Número <input type="tel" name="tel" id="numero" autocomplete="tel" pattern="^\d{9}$" maxlenght="9"></label>
+                <p>
+                    <input type="submit">
+                    <input type="reset">
+                </p>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

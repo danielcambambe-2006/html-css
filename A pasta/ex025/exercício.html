@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - início de sessão ou registro</title>
+    <link rel="shortcut icon" href="https://www.facebook.com/images/fb_icon_325x325.png" type="image/x-icon">
+    </head>
+    <style>
+        *{
+            font-family:arial,helvetica,sans-serif;
+            text-align: center;
+        
+
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             min-height: 100vh;
+             
+        
+        }
+        #geral{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #414b56;
+            width: 100%;
+            height: 90%;
+            
+            
+    
+        }
+        #facebook{
+            color: #1c6ac4;
+            font-size: 60px;
+            text-align: center;
+        }
+        #formulario{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color:white;
+            width:250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+            
+            
+            
+        }
+        input{
+            height: 25px;
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+        #sessao{
+            background-color: #1c6ac4;
+            height: 25px;
+            width: 200px;
+            border-radius: 3px;
+            padding: 5px;
+            
+            
+        }
+        #sessao:hover{
+            text-decoration: none;
+        }
+        #semsenha{
+            color: #1c6ac4;
+        
+        }
+        #sessao,a {
+            text-decoration:none;
+            color: #ffffff;
+        }
+        #semsenha:hover{
+            text-decoration: underline;
+            color: #265494
+        }
+        #p{
+            font-size: 25px ;
+            text-align: center;
+        }
+        #criar{
+            
+        }
+        
+        @media (max-width: 600px) {
+            #geral{
+            
+            align-items: center;
+            flex-direction: column;
+
+            }
+            #formulario{
+                align-items: center;
+            }
+        }
+    </style>
+    <body>
+        <div id="geral">
+
+                <div>
+                    <p id="facebook">
+                    facebook
+                    </p>
+               
+                <p id="p">O Facebook ajuda-te a comunicar e a partilhar com as pessoas que fazem parte da tua vida.</p> </div> 
+
+            <div id="formulario">
+                <form action="post" autocomplete="on">
+                    <label for="nome">
+                        <input type="text" name="nome" id="nome" autocomplete="email" placeholder="E-mail ou número de utilizador" style="margin-top:15px;">
+                    </label>
+                    <label for="senha">
+                        <input type="text" name="senha" id="senha" placeholder="Palavra-Passe" minlength="6" maxleght="20" autocomplete="current-password">
+                    </label>
+                    <p id="sessao"><a href="#">Iniciar sessão</a></p>
+                    <p ><a href="#" id="semsenha">Não sabes a tua palavra-passe</a></p>
+                    <p id="criar"><a href="#">Criar Conta nova</a></p>
+                </form>
+
+            </div>
+            
+        </div>
+    </body>
+</html>

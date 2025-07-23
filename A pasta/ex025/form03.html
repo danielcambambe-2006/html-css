@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <tittle>Formulários 3</tittle>
+    </head>
+    <style>
+        *{
+            font-family: arial,helvetica,sans-serif
+        }
+    </style>
+    <body>
+        <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+<p><label for="nome">Nome <input type="text" name="nome" id="nome" autocomple="name" required></label></p>
+            <p><label for="media">Média <input type="number" min="1" max="20" step="0.5" required></label></p>
+            <p>
+                <label for="data">Data de Inscrição <input type="date" name="data" id="data" value="2025-07-17"> </label>
+            </p>
+            <p><label for="hora">Hora <input type="time" name="hora" id="hora" value="00:00"> </label></p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">            
+        </form>
+    </body>
+    </html> 
