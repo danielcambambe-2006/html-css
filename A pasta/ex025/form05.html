@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Checkbox e Radio</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="masculino" value="M"><label for="masculino">Masculino</label><br>
+                <input type="radio" name="sexo" id="feminino" value="F"><label for="feminino">Feminnino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Animes</legend>
+            <input type="checkbox" name="naruto" id="naruto"><label for="naruto">Naruto</label><br>
+            <input type="checkbox" name="solo" id="solo"><label for="solo">Solo Leveling</label><br>
+            <input type="checkbox" name="aka" id="aka"><label for="aka">Akame Ga Kill</label><br>
+            <input type="checkbox" name="one" id="one"><label for="one">One Punch Man</label><br>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
